@@ -1,0 +1,398 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 50%, #e2e8f0 100%);
+    color: #334155;
+    line-height: 1.6;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+}
+
+/* Header */
+.header {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.logo-image {
+    height: 120px;
+    width: auto;
+    max-width: 400px;
+    object-fit: contain;
+}
+
+/* Main content */
+.main-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+}
+
+.content-wrapper {
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+}
+
+.hero-section {
+    margin-bottom: 4rem;
+}
+
+.title {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #64748b;
+    margin-bottom: 2rem;
+}
+
+.description {
+    font-size: 1.125rem;
+    color: #64748b;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+/* Countdown */
+.countdown-section {
+    margin-bottom: 4rem;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.countdown-item {
+    background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
+    border-radius: 16px;
+    padding: 2rem 1.5rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08), 0 4px 10px rgba(239, 106, 28, 0.05);
+    border: 1px solid #e2e8f0;
+    min-width: 120px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.countdown-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(239, 106, 28, 0.15);
+}
+
+.countdown-number {
+    display: block;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ef6a1c;
+    line-height: 1;
+}
+
+.countdown-label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-top: 0.5rem;
+}
+
+/* Contact section */
+.contact-section h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 2rem;
+}
+
+.phone-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.phone-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1.25rem 2rem;
+    background: linear-gradient(135deg, #ef6a1c 0%, #d97706 100%);
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    font-size: 1.125rem;
+    font-weight: 600;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 25px rgba(239, 106, 28, 0.3);
+}
+
+.phone-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(239, 106, 28, 0.4);
+}
+
+.phone-link svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* Social media section */
+.social-media-section {
+    margin-top: 2rem;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.social-icon.facebook {
+    background: linear-gradient(135deg, #1877f2 0%, #42a5f5 100%);
+    color: white;
+    box-shadow: 0 4px 15px rgba(24, 119, 242, 0.3);
+}
+
+.social-icon.facebook:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(24, 119, 242, 0.4);
+}
+
+.social-icon.instagram {
+    background: linear-gradient(135deg, #e4405f 0%, #f77737 50%, #fcaf45 100%);
+    color: white;
+    box-shadow: 0 4px 15px rgba(228, 64, 95, 0.3);
+}
+
+.social-icon.instagram svg {
+    fill: white !important;
+}
+
+.social-icon.instagram:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(228, 64, 95, 0.4);
+}
+
+.social-icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+
+/* Background decoration removed */
+
+/* Success message */
+.success-message {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    margin-top: 1rem;
+    font-weight: 500;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+}
+
+.success-message.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive design */
+/* Laptop/Desktop optimization */
+@media (min-width: 769px) and (max-width: 1440px) {
+    .container {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1rem;
+        overflow: hidden;
+    }
+    
+    .header {
+        padding: 0.5rem 0;
+        margin-bottom: 1rem;
+    }
+    
+    .logo-image {
+        height: 80px;
+        max-width: 300px;
+    }
+    
+    .main-content {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .content-wrapper {
+        max-width: 700px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .hero-section {
+        margin-bottom: 1.5rem;
+    }
+    
+    .title {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .subtitle {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .description {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .countdown-section {
+        margin-bottom: 1.5rem;
+    }
+    
+    .countdown {
+        gap: 0.8rem;
+    }
+    
+    .countdown-item {
+        padding: 0.8rem;
+        min-width: 70px;
+    }
+    
+    .countdown-number {
+        font-size: 1.5rem;
+    }
+    
+    .countdown-label {
+        font-size: 0.8rem;
+    }
+    
+    .contact-section h3 {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .phone-link {
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem;
+    }
+    
+    .social-media-section {
+        margin-top: 1rem;
+    }
+    
+    .social-icon {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .social-icon svg {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 2.5rem;
+    }
+    
+    .subtitle {
+        font-size: 1.25rem;
+    }
+    
+    .countdown {
+        gap: 1rem;
+    }
+    
+    .countdown-item {
+        padding: 1.5rem 1rem;
+        min-width: 100px;
+    }
+    
+    .countdown-number {
+        font-size: 2rem;
+    }
+    
+    .notify-form {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .notify-form input {
+        min-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 1rem;
+    }
+    
+    .logo h1 {
+        font-size: 2rem;
+    }
+    
+    .title {
+        font-size: 2rem;
+    }
+    
+    .countdown {
+        gap: 0.5rem;
+    }
+    
+    .countdown-item {
+        padding: 1rem 0.75rem;
+        min-width: 80px;
+    }
+    
+    .countdown-number {
+        font-size: 1.5rem;
+    }
+    
+    .countdown-label {
+        font-size: 0.75rem;
+    }
+}
